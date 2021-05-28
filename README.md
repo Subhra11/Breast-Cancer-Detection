@@ -7,3 +7,11 @@ Image_Enhancement.ipynb gives the detailed information of how to read the datase
 train_inception_org.py and train_inception_cropped.py are the python scripts used to train the classifier.
 
 The dataset folder can be found in the link as provided in the appendix manual.
+
+Image size
+This is currently fixed at 1024x1024 for the models in this study. 
+
+Batch size
+we have used 16 as batch size however, this can be reduced to improve the performance.
+
+Number of epochs used is 50, the accuracy dropped when ran for 100.
