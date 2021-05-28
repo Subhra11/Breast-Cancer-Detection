@@ -111,7 +111,7 @@ class DMImagePreprocessor(object):
             which has a max value of 255.
         '''
         # Create img for thresholding and contours.
-        img_8u = (img.astype('uint8')/img.max()*255).astype('uint8')
+        img_8u = (img.astype('float32')/img.max()*255).astype('uint16')
         if low_int_threshold < 1.:
             low_th = int(img_8u.max()*low_int_threshold)
         else:
